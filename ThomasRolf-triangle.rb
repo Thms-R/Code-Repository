@@ -4,12 +4,10 @@
 Coding Assignment: probability to be able to form a triangle if you randomly break a stick in 3 pieces.
 =end
 #################################################
-
 # I assumed that a triangle looking like a straight line is an edge case of a triangle.
 
-def MonteCarloProba(n=100000.000)
 # n number of simulations. The best would then be to control the convergence by plotting the probability against n. Default value for n is 100000.
-
+def MonteCarloProba(n=100000.000)
   proba = 0
 
   # Stick is represented by the [0,1] segment.
