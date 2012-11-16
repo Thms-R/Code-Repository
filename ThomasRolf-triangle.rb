@@ -29,7 +29,10 @@ for i in 0..n
   side_b=big_break-small_break
   side_c=1-big_break
 
-    if a<=b+c && b<=a+c && c<=a+b #condition to be able to form a triangle
+  # order the sides once so we can use this going forward
+  ordered_sides = [side_a, side_b, side_c].sort
+
+    if ordered_sides[0] + ordered_sides[1] >= ordered_sides[2] #condition to be able to form a triangle
     proba=proba+1/n
     end
 end
