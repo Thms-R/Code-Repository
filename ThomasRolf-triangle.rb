@@ -33,11 +33,11 @@ for i in 0..n
   ordered_sides = [side_a, side_b, side_c].sort
 
   if ordered_sides[0] + ordered_sides[1] >= ordered_sides[2] #condition to be able to form a triangle
-    proba=proba+1/n
+    proba+=1
   end
 end
 
-  puts ("The probability that you can form a triangle is #{proba}")
+  puts ("The probability that you can form a triangle is #{proba / n}")
 
 end
 
