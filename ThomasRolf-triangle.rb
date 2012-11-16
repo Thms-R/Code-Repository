@@ -25,9 +25,9 @@ for i in 0..n
   big_break=breaks.max
 
   # Three sides
-  a=small_break
-  b=big_break-small_break
-  c=1-big_break
+  side_a=small_break
+  side_b=big_break-small_break
+  side_c=1-big_break
 
     if a<=b+c && b<=a+c && c<=a+b #condition to be able to form a triangle
     proba=proba+1/n
