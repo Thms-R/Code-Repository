@@ -12,7 +12,6 @@ def MonteCarloProba(n=100000.000)
 
   # Stick is represented by the [0,1] segment.
   # Random breaks at x and y determined by random numbers between 0 and 1.
-
   for i in 0..n
     breaks      = [rand, rand]
     small_break = breaks.min
