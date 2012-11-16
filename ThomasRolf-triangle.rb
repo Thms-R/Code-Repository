@@ -10,12 +10,10 @@ Coding Assignment: probability to be able to form a triangle if you randomly bre
 def MonteCarloProba(n=100000.000)
 # n number of simulations. The best would then be to control the convergence by plotting the probability against n. Default value for n is 100000.
 
-proba = 0
+  proba = 0
 
-=begin
-Stick is represented by the [0,1] segment.
-Random breaks at x and y determined by random numbers between 0 and 1.
-=end
+  # Stick is represented by the [0,1] segment.
+  # Random breaks at x and y determined by random numbers between 0 and 1.
 
   for i in 0..n
     breaks = [rand, rand]
