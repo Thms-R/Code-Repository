@@ -21,20 +21,20 @@ Random breaks at x and y determined by random numbers between 0 and 1.
 
 for i in 0..n
   x=rand()
-  y=rand()  
-  
+  y=rand()
+
   # Three sides
   a=[x,y].min
   b=[x,y].max-[x,y].min
-  c=1-[x,y].max 
-    
+  c=1-[x,y].max
+
     if a<=b+c && b<=a+c && c<=a+b #condition to be able to form a triangle
     proba=proba+1/n
     end
 end
 
   puts ("The probability that you can form a triangle is #{proba}")
-  
+
 end
 
 
