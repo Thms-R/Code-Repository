@@ -5,9 +5,7 @@ Coding Assignment: probability to be able to form a triangle if you randomly bre
 =end
 #################################################
 
-
 # I assumed that a triangle looking like a straight line is an edge case of a triangle.
-
 
 def MonteCarloProba(n=100000.000)
 # n number of simulations. The best would then be to control the convergence by plotting the probability against n. Default value for n is 100000.
@@ -38,9 +36,7 @@ Random breaks at x and y determined by random numbers between 0 and 1.
   end
 
   puts ("The probability that you can form a triangle is #{proba / n}")
-
 end
-
 
 MonteCarloProba()
 # Possible to choose the number of simulations n as an argument. Make sure to specify it with significant figures such as 1000.000 otherwise Ruby will round the result.
