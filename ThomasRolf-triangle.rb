@@ -21,13 +21,13 @@ Random breaks at x and y determined by random numbers between 0 and 1.
 
 for i in 0..n
   breaks = [rand, rand]
-  x=breaks.min
-  y=breaks.max
+  small_break=breaks.min
+  big_break=breaks.max
 
   # Three sides
-  a=x
-  b=y-x
-  c=1-y
+  a=small_break
+  b=big_break-small_break
+  c=1-big_break
 
     if a<=b+c && b<=a+c && c<=a+b #condition to be able to form a triangle
     proba=proba+1/n
