@@ -14,20 +14,20 @@ def MonteCarloProba(n=100000.000)
   # Random breaks at x and y determined by random numbers between 0 and 1.
 
   for i in 0..n
-    breaks = [rand, rand]
-    small_break=breaks.min
-    big_break=breaks.max
+    breaks      = [rand, rand]
+    small_break = breaks.min
+    big_break   = breaks.max
 
     # Three sides
-    side_a=small_break
-    side_b=big_break-small_break
-    side_c=1-big_break
+    side_a = small_break
+    side_b = big_break-small_break
+    side_c = 1-big_break
 
     # order the sides once so we can use this going forward
     ordered_sides = [side_a, side_b, side_c].sort
 
     if ordered_sides[0] + ordered_sides[1] >= ordered_sides[2] #condition to be able to form a triangle
-      proba+=1
+      proba += 1
     end
   end
 
