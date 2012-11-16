@@ -20,13 +20,14 @@ Random breaks at x and y determined by random numbers between 0 and 1.
 =end
 
 for i in 0..n
-  x=rand()
-  y=rand()
+  breaks = [rand, rand]
+  x=breaks.min
+  y=breaks.max
 
   # Three sides
-  a=[x,y].min
-  b=[x,y].max-[x,y].min
-  c=1-[x,y].max
+  a=x
+  b=y-x
+  c=1-y
 
     if a<=b+c && b<=a+c && c<=a+b #condition to be able to form a triangle
     proba=proba+1/n
